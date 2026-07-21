@@ -1,0 +1,3 @@
+name: Aprendiendo GitHub Actions
+run-name: Test00
+on: [push]
