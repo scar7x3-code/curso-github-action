@@ -1,3 +1,11 @@
 name: Aprendiendo GitHub Actions
-run-name: Test00
+run-name: Github ACT
 on: [push]
+jobs:
+  hola-mundo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Correr script
+        run: python hola_mundo.py
