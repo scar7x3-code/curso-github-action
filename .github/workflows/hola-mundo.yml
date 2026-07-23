@@ -8,4 +8,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Correr script
-        run: test0.js
+        run: node hola-mundo.js
