@@ -1,11 +1,19 @@
-name: Aprendiendo GitHub Actions
-run-name: Github ACT
+name: Hola Mundo con JavaScript
+
 on: [push]
+
 jobs:
   hola-mundo:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Correr script
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Ejecutar Hola Mundo
         run: node hola-mundo.js
