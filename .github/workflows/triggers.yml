@@ -29,3 +29,8 @@ on:
         type: string
   schedule:
     - cron:  '15 22 * * *'
+jobs:
+  hola-mundo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hola Mundo"
